@@ -72,20 +72,26 @@ body{
     width: 100vw;
 }
 
-
-.aboutContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
 #about{
     display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
     background-color: rgb(238, 238, 240);
     width: 100vw;
     height: 100vh;
 }
+
+/* .aboutContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} */
+
 
 #aboutImage{
    width: 35%;
@@ -98,8 +104,14 @@ body{
 }
 
 #aboutText{
-    width: 35%;
+    width: 65%;
+    justify-content: start;
     text-align: center;
+}
+
+.abouttextcontent{
+    width: 35%;
+    
 }
 
 #servicesContainer{
@@ -109,7 +121,7 @@ body{
     grid-gap: 25px;
     padding: 30px;
     font-size: 15px;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .servicesImage > span > *{
@@ -148,6 +160,11 @@ body{
 
 .footernavigation{
    display: flex;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0px;
 }
 
 .footernavigation > ul , .social > span > img{
